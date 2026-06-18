@@ -16,5 +16,15 @@ public class DemoApplication {
 		HelloController helloController = new HelloController();
 		System.out.println(helloController.sayHello() + " : Way - 2");
 	}
-
 }
+
+/*
+	https://start.spring.io/
+	- maven
+	- stable version
+	- default artifact, group, demo
+	- JAR
+	- Java 21
+	- Dependency - Spring Web
+	- Create Project
+*/
