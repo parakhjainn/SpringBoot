@@ -28,3 +28,9 @@ public class DemoApplication {
 	- Dependency - Spring Web
 	- Create Project
 */
+
+/*
+	server.port = 9090 in application.properties
+	http://localhost:9090/hello
+	http://localhost:9090/bye
+ */
