@@ -4,9 +4,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 //@Primary
-@Qualifier("cp") // custom bean name
+//@Qualifier("cp") // custom bean name
 public class CardPayment implements PaymentService {
 
     @Override
