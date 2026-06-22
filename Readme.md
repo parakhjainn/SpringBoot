@@ -20,3 +20,11 @@
 ## CoreDemo2
 
 - added to demonstrate external library (JAR) in SpringCoreDemo
+
+# Lecture 6
+
+## CircularDependencyDemo
+
+- with circular dependency + constructor injection = error
+- with circular dependency + setter/field injection = code works but not good practice
+- remove circular dependency from code by refactoring
