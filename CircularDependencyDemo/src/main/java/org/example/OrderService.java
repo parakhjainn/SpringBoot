@@ -6,12 +6,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderService {
 
+    @Autowired
     private PaymentService paymentService;
 
     //    @Autowired -> Optional bcz only 1 constructor
-    public OrderService(PaymentService paymentService) {
-        this.paymentService = paymentService;
-    }
+//    public OrderService(PaymentService paymentService) {
+//        this.paymentService = paymentService;
+//    }
 
     public void placeOrder() {
         paymentService.pay();
