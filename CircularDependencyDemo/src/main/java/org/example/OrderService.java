@@ -8,7 +8,7 @@ public class OrderService {
 
     private PaymentService paymentService;
 
-//    @Autowired -> Optional bcz only 1 constructor
+    //    @Autowired -> Optional bcz only 1 constructor
     public OrderService(PaymentService paymentService) {
         this.paymentService = paymentService;
     }
@@ -16,6 +16,10 @@ public class OrderService {
     public void placeOrder() {
         paymentService.pay();
         System.out.println("Order placed !");
+    }
+
+    public void getOrderDetails() {
+        System.out.println("Order Details : !");
     }
 
 
