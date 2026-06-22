@@ -17,6 +17,7 @@ public class PaymentService {
     public void pay() {
         System.out.println("Payment Done !");
 
-        orderService.getOrderDetails();
+        // Not it's responsibility
+//        orderService.getOrderDetails();
     }
 }

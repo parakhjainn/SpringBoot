@@ -16,6 +16,10 @@ public class OrderService {
 
     public void placeOrder() {
         paymentService.pay();
+
+        // solved circular dependency by assigning responsibilities correctly
+        getOrderDetails();
+
         System.out.println("Order placed !");
     }
 
