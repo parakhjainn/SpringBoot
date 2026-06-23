@@ -1,8 +1,10 @@
 package org.example;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("singleton") // Optional, by default scope is singleton only
 public class OrderService {
 
     public OrderService() {
