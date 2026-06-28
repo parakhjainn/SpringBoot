@@ -8,7 +8,7 @@ public class OrderService {
 
     private PaymentService paymentService;
 
-    public OrderService(PaymentService paymentService) {
+    public OrderService(@Lazy PaymentService paymentService) {
 
         this.paymentService = paymentService;
 
