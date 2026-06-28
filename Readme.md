@@ -28,3 +28,8 @@
 - with circular dependency + constructor injection = error
 - with circular dependency + setter/field injection = code works but not good practice
 - remove circular dependency from code by refactoring
+- Bean Scope (Singleton, Prototype)
+
+## BeanInitialisationDemo
+
+- 
