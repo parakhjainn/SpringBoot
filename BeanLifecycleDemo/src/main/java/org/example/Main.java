@@ -8,7 +8,10 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         OrderService orderService = context.getBean(OrderService.class);
-
         orderService.placeOrder();
+
+        AppConfig appConfig = context.getBean(AppConfig.class);
+        appConfig.demo();
+
     }
 }
