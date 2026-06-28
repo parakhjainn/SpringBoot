@@ -38,4 +38,12 @@
 ## BeanInitialisationDemo
 
 - Bean Initialization is Eager (Default)
-- 
+- Bean Initialization - Lazy
+- Note 
+    - Singleton scope can have Eager (default) & Lazy Initialization
+    - Prototype scope has always Lazy Initialization only.
+- OrderService & PaymentService both are independent
+    - both classes are singleton and eager -> Works
+- OrderService dependent on PaymentService
+    - OrderService is singleton & lazy while PaymentService is singleton & eager -> Works
+    - OrderService is singleton & eager while PaymentService is singleton & lazy -> Ideally PaymentService shouldn't be created but since it is required by OrderService it'll be initialized at startup only
