@@ -47,3 +47,4 @@
 - OrderService dependent on PaymentService
     - OrderService is singleton & lazy while PaymentService is singleton & eager -> Works
     - OrderService is singleton & eager while PaymentService is singleton & lazy -> Ideally PaymentService shouldn't be created but since it is required by OrderService it'll be initialized at startup only
+- When use @Lazy injection, we get Proxy class object
