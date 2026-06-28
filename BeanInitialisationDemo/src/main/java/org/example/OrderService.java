@@ -8,7 +8,7 @@ public class OrderService {
 
     private PaymentService paymentService;
 
-    public OrderService(@Lazy PaymentService paymentService) {
+    public OrderService(PaymentService paymentService) {
 
         this.paymentService = paymentService;
 
@@ -16,9 +16,12 @@ public class OrderService {
     }
 
     public void placeOrder() {
-        // When calling pay(), now actual object of PaymentService will get created
         paymentService.pay();
 
         System.out.println("Order Placed !");
+    }
+
+    public void getOrderDetails() {
+        System.out.println("Order Details !");
     }
 }
