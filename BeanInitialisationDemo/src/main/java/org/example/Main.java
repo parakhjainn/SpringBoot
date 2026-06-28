@@ -8,7 +8,7 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         // Until we use below lines, object will be not be created because of Lazy Initialization
-        OrderService orderService = context.getBean(OrderService.class);
-        PaymentService paymentService = context.getBean(PaymentService.class);
+//        OrderService orderService = context.getBean(OrderService.class);
+//        PaymentService paymentService = context.getBean(PaymentService.class);
     }
 }
