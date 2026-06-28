@@ -37,4 +37,5 @@
 
 ## BeanInitialisationDemo
 
+- Bean Initialization is Eager (Default)
 - 
