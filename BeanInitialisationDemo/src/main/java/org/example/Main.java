@@ -11,7 +11,18 @@ public class Main {
         OrderService orderService = context.getBean(OrderService.class);
 //        PaymentService paymentService = context.getBean(PaymentService.class);
 
+        System.out.println("PaymentService not created yet");
+
         orderService.placeOrder();
+
+        /*
+            output:-
+                OrderService created !
+                PaymentService not created yet
+                PaymentService Created !
+                Payment Done !
+                Order  Placed !
+        * */
 
     }
 }
