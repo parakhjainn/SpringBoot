@@ -72,4 +72,5 @@
 
 - quick recap of Annotation Config
 - Converting Annotation config to XML Based config
-- 
+- adding bean to xml
+- get bean by type/id

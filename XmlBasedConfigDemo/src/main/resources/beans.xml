@@ -5,5 +5,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
+    <bean id = "orderService" class="org.example.OrderService" />
+
+<!--    <bean id = "orderService2" class="org.example.OrderService" />-->
 
 </beans>
