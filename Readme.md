@@ -71,4 +71,5 @@
 # Lecture 8 XML Based Configuration
 
 - quick recap of Annotation Config
+- Converting Annotation config to XML Based config
 - 
