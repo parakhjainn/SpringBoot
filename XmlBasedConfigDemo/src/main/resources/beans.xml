@@ -6,19 +6,26 @@
 
     <!-- bean definitions here -->
 
-    <bean id = "paymentService"
-          name = "paymentServiceName, paymentServiceBean"
-          class = "org.example.PaymentService">
-<!--        <constructor-arg index = "0" value = "upi" />-->
-<!--        <constructor-arg index = "0" value = "upi" />-->
-        <constructor-arg name="type" value = "upi" />
+<!--    <bean id = "paymentService"-->
+<!--          name = "paymentServiceName, paymentServiceBean"-->
+<!--          class = "org.example.payment.PaymentService">-->
+<!--&lt;!&ndash;        <constructor-arg index = "0" value = "upi" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <constructor-arg index = "0" value = "upi" />&ndash;&gt;-->
+<!--        <constructor-arg name="type" value = "upi" />-->
+<!--    </bean>-->
+
+<!--    <bean id = "orderService" class = "org.example.OrderService">-->
+<!--           <constructor-arg ref = "paymentService"/>-->
+<!--    </bean>-->
+
+<!--&lt;!&ndash;    <bean id = "orderService2" class="org.example.OrderService" />&ndash;&gt;-->
+
+    <bean id="upiPaymentService" class="org.example.payment.UPIPaymentService"/>
+
+    <bean id="cardPaymentService" class="org.example.payment.CardPaymentService"/>
+
+    <bean id="orderService" class="org.example.OrderService">
+        <constructor-arg ref="upiPaymentService" />
     </bean>
-
-    <bean id = "orderService" class = "org.example.OrderService">
-           <constructor-arg ref = "paymentService"/>
-    </bean>
-
-<!--    <bean id = "orderService2" class="org.example.OrderService" />-->
-
 
 </beans>

@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.payment.PaymentService;
+
 public class OrderService {
 
     private PaymentService paymentService;
