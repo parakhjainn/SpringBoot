@@ -62,4 +62,5 @@
     - way 3 PostConstruct Annotation (widely used)
 - Destruction Callbacks demo
     - way 1 implements DisposableBean interface
-    
+    - way 2 custom destroy method when using @Bean
+    - way 3 PreDestroy Annotation (widely used)
