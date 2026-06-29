@@ -51,9 +51,8 @@
 - Ciruclar dependency without using Lazy - Error
 - Ciruclar dependency fix using @Lazy Injection
 
-# Lecture 7
+# Lecture 7 BeanLifecycleDemo
 
-## BeanLifecycleDemo
 - Basic setup to understand bean lifecycle
 - Aware interfaces demo
 - Initialization Callbacks Demo 
@@ -68,3 +67,8 @@
 - Prototype Bean (After initialization callbacks, spring handover bean to Client)
 - Circular dependency using @PostConstruct 
 - solve Circular dependency using @PostConstruct 
+
+# Lecture 8 XML Based Configuration
+
+- quick recap of Annotation Config
+- 
