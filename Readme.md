@@ -78,4 +78,7 @@
 - dependency injections in beans - constructor injection 
 - setter injection
 - multiple beans of same type - multiple ways to solve like using `ref`
-- 
+- prototype scope
+- injecting collections to beans
+- postconstruct and predestroy alternatives
+- organising XML in multiple files
