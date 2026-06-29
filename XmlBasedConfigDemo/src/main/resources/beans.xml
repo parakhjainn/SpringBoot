@@ -9,4 +9,6 @@
 
 <!--    <bean id = "orderService2" class="org.example.OrderService" />-->
 
+    <bean id = "paymentService" name = "paymentServiceName, paymentServiceBean" class="org.example.PaymentService" />
+
 </beans>

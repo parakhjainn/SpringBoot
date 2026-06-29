@@ -74,3 +74,4 @@
 - Converting Annotation config to XML Based config
 - adding bean to xml
 - get bean by type/id
+- adding second bean & get bean by name (alias)

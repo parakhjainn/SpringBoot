@@ -18,9 +18,11 @@ public class Main {
 
         // Way 3 get bean by both id and type (works even when beans.xml has multiple OrderService type of bean)
         // best way
-        OrderService orderService2 = context.getBean("orderService2", OrderService.class);
+        OrderService orderService2 = context.getBean("orderService", OrderService.class);
         orderService2.placeOrder();
 
+        PaymentService paymentService = context.getBean("paymentServiceBean", PaymentService.class);
+        paymentService.pay();
 
     }
 }
