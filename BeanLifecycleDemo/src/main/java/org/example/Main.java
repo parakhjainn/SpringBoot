@@ -7,11 +7,12 @@ public class Main {
     static void main() {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        OrderService orderService = context.getBean(OrderService.class);
-        orderService.placeOrder();
+//        OrderService orderService = context.getBean(OrderService.class);
+//        orderService.placeOrder();
+//
+//        AppConfig appConfig = context.getBean(AppConfig.class);
+//        appConfig.demo();
 
-        AppConfig appConfig = context.getBean(AppConfig.class);
-        appConfig.demo();
 
     }
 }

@@ -50,3 +50,10 @@
 - When use @Lazy injection, we get Proxy class object
 - Ciruclar dependency without using Lazy - Error
 - Ciruclar dependency fix using @Lazy Injection
+
+# Lecture 7
+
+## BeanLifecycleDemo
+- Basic setup to understand bean lifecycle
+- Aware interfaces demo
+- 
