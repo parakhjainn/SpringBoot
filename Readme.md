@@ -75,3 +75,5 @@
 - adding bean to xml
 - get bean by type/id
 - adding second bean & get bean by name (alias)
+- dependency injections in beans - constructor injection 
+- 

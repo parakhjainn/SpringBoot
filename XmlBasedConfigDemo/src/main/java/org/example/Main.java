@@ -21,8 +21,5 @@ public class Main {
         OrderService orderService2 = context.getBean("orderService", OrderService.class);
         orderService2.placeOrder();
 
-        PaymentService paymentService = context.getBean("paymentServiceBean", PaymentService.class);
-        paymentService.pay();
-
     }
 }
