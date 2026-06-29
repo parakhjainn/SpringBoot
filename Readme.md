@@ -64,3 +64,5 @@
     - way 1 implements DisposableBean interface
     - way 2 custom destroy method when using @Bean
     - way 3 PreDestroy Annotation (widely used)
+- for Lazy initialization, steps are same but from creation till end will execute when user calls any method of that bean
+- Prototype Bean (After initialization callbacks, spring handover bean to Client)

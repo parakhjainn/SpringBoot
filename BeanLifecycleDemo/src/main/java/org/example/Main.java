@@ -14,10 +14,10 @@ public class Main {
 //        AppConfig appConfig = context.getBean(AppConfig.class);
 //        appConfig.demo();
 
-//        CartService cartService = context.getBean(CartService.class);
-//        System.out.println(cartService.getValue(1));
-//
-//        context.close();
+        CartService cartService = context.getBean(CartService.class);
+        System.out.println(cartService.getValue(1));
+
+        context.close();
 
     }
 }

@@ -8,13 +8,14 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
 @Component
-@Lazy
+@Scope("prototype")
 public class CartService implements BeanNameAware, ApplicationContextAware
         /* DisposableBean */ {
 
