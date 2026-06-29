@@ -1,5 +1,6 @@
 package org.example;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -8,5 +9,10 @@ public class A {
 
     public A(B b) {
         this.b = b;
+    }
+
+    @PostConstruct
+    public void setB() {
+        b.setA(this);
     }
 }
