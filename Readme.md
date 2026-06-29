@@ -58,4 +58,5 @@
 - Aware interfaces demo
 - Initialization Callbacks Demo 
     - way 1 implements InitializingBean interface
-    - way 2 
+    - way 2 custom init method when using @Bean
+    - way 3  

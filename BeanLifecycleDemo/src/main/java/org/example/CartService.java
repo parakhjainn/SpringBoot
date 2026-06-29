@@ -1,13 +1,9 @@
 package org.example;
 
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.stereotype.Component;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
-public class CartService implements InitializingBean {
+public class CartService {
 
     Map<Integer, String> mp;
 
@@ -16,9 +12,8 @@ public class CartService implements InitializingBean {
         System.out.println("CartService constructor called !");
     }
 
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        System.out.println("Bean is Ready !");
+    public void start() {
+        System.out.println("Bean is ready !");
         mp.put(1, "Parakh");
         mp.put(2, "Aditya");
     }
