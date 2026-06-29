@@ -77,5 +77,5 @@
 - adding second bean & get bean by name (alias)
 - dependency injections in beans - constructor injection 
 - setter injection
-- multiple beans of same type
+- multiple beans of same type - multiple ways to solve like using `ref`
 - 
