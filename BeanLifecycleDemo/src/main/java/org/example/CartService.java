@@ -3,6 +3,7 @@ package org.example;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.beans.factory.DisposableBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
@@ -11,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class CartService implements BeanNameAware, ApplicationContextAware {
+public class CartService implements BeanNameAware, ApplicationContextAware, DisposableBean {
 
     Map<Integer, String> mp;
 
@@ -49,5 +50,11 @@ public class CartService implements BeanNameAware, ApplicationContextAware {
         System.out.println("Bean is ready !");
         mp.put(1, "Parakh");
         mp.put(2, "Aditya");
+    }
+
+    @Override
+    public void destroy() throws Exception {
+        mp.clear();
+        System.out.println("Bean is Destroyed !");
     }
 }
