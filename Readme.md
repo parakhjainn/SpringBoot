@@ -56,4 +56,6 @@
 ## BeanLifecycleDemo
 - Basic setup to understand bean lifecycle
 - Aware interfaces demo
-- 
+- Initialization Callbacks Demo 
+    - way 1 implements InitializingBean interface
+    - way 2 
