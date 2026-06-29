@@ -82,3 +82,11 @@
 - injecting collections to beans
 - postconstruct and predestroy alternatives
 - organising XML in multiple files
+
+# Lecture 9 Spring Boot Core Demo
+
+## Spring Core Demo
+- using only spring context
+
+## Spring Boot Core Demo
+- 
