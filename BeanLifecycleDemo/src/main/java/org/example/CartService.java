@@ -11,8 +11,9 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
-public class CartService implements BeanNameAware, ApplicationContextAware, DisposableBean {
+//@Component
+public class CartService implements BeanNameAware, ApplicationContextAware
+        /* DisposableBean */ {
 
     Map<Integer, String> mp;
 
@@ -31,12 +32,12 @@ public class CartService implements BeanNameAware, ApplicationContextAware, Disp
         System.out.println("ApplicationContext name is " + applicationContext.getClass());
     }
 
-    @PostConstruct
-    public void star2() {
-        System.out.println("Bean is ready !");
-        mp.put(1, "Parakh");
-        mp.put(2, "Aditya");
-    }
+//    @PostConstruct
+//    public void star2() {
+//        System.out.println("Bean is ready !");
+//        mp.put(1, "Parakh");
+//        mp.put(2, "Aditya");
+//    }
 
     public void addToCart() {
         System.out.println("Added to cart !");
@@ -52,8 +53,13 @@ public class CartService implements BeanNameAware, ApplicationContextAware, Disp
         mp.put(2, "Aditya");
     }
 
-    @Override
-    public void destroy() throws Exception {
+//    @Override
+//    public void destroy() throws Exception {
+//        mp.clear();
+//        System.out.println("Bean is Destroyed !");
+//    }
+
+    public void stop () {
         mp.clear();
         System.out.println("Bean is Destroyed !");
     }
