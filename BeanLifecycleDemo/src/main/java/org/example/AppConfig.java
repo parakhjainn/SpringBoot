@@ -8,8 +8,9 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 public class AppConfig {
 
-    @Bean(initMethod = "start")
-    public CartService getCartServiceBean(){
-        return new CartService();
-    }
+//    @Bean(initMethod = "start")
+//    public CartService getCartServiceBean(){
+//        return new CartService();
+//    }
+
 }

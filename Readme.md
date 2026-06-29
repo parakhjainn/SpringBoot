@@ -59,4 +59,4 @@
 - Initialization Callbacks Demo 
     - way 1 implements InitializingBean interface
     - way 2 custom init method when using @Bean
-    - way 3  
+    - way 3 PostConstruct Annotation (widely used)

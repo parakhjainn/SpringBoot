@@ -1,9 +1,17 @@
 package org.example;
 
+import jakarta.annotation.PostConstruct;
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class CartService {
+@Component
+public class CartService implements BeanNameAware, ApplicationContextAware {
 
     Map<Integer, String> mp;
 
@@ -12,7 +20,18 @@ public class CartService {
         System.out.println("CartService constructor called !");
     }
 
-    public void start() {
+    @Override
+    public void setBeanName(String name) {
+        System.out.println("Bean name is " + name);
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        System.out.println("ApplicationContext name is " + applicationContext.getClass());
+    }
+
+    @PostConstruct
+    public void star2() {
         System.out.println("Bean is ready !");
         mp.put(1, "Parakh");
         mp.put(2, "Aditya");
@@ -24,5 +43,11 @@ public class CartService {
 
     public String getValue(Integer key) {
         return mp.get(key);
+    }
+
+    public void start() {
+        System.out.println("Bean is ready !");
+        mp.put(1, "Parakh");
+        mp.put(2, "Aditya");
     }
 }
