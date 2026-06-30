@@ -86,11 +86,18 @@
 # Lecture 9 Spring Boot Core Demo
 
 ## Spring Core Demo
+
 - using only spring context
 
 ## Spring Boot Core Demo
+
 - spring boot starter parent
 - Collecting IOC COntainer beans
 - Understanding @SpringBoot Application
 - @SpringBootConfiguration & @ComponentScan
 - @EnableAutoConfiguration
+
+# Lecture 10 SpringBootConfigurationDemo
+
+- application.properties
+- @ConfigurationProperties
