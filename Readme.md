@@ -89,4 +89,8 @@
 - using only spring context
 
 ## Spring Boot Core Demo
-- 
+- spring boot starter parent
+- Collecting IOC COntainer beans
+- Understanding @SpringBoot Application
+- @SpringBootConfiguration & @ComponentScan
+- @EnableAutoConfiguration
