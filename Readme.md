@@ -103,3 +103,8 @@
 - @ConfigurationProperties
 - Runner Interfaces Demo (ApplicationRunner)
 - Runner Interfaces Demo (CommandLineRunner)
+
+# Lecture 11 SpringBootCRUDDemo
+
+- exclude datasourceautoconfiguration to print hello world
+- 
