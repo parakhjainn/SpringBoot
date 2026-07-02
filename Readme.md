@@ -107,4 +107,4 @@
 # Lecture 11 SpringBootCRUDDemo
 
 - exclude datasourceautoconfiguration to print hello world
-- 
+- proper folder structure (MVC)
