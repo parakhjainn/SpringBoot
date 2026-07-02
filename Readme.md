@@ -109,3 +109,4 @@
 - exclude datasourceautoconfiguration to print hello world
 - proper folder structure (MVC)
 - @Entity
+- Controller Service Repository
