@@ -15,9 +15,11 @@ public class SpringBootConfigurationDemoApplication {
 //		paymentGateway.setType("Paytm");
 //		paymentGateway.setRetryCount(5);
 
+		// Using @ConfigurationProperties
 		System.out.println(paymentGateway.getType());
 		System.out.println(paymentGateway.getRetryCount());
-
+		System.out.println(paymentGateway.isEnabled());
+		System.out.println(paymentGateway.getTimeout());
 
 	}
 
