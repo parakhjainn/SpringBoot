@@ -4,6 +4,9 @@ import com.example.SpringBootCRUDDemo.entity.Student;
 import com.example.SpringBootCRUDDemo.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Optional;
+
 @Service
 public class StudentService {
 
@@ -19,5 +22,16 @@ public class StudentService {
         // store to db
         Student studentResponse = studentRepository.save(studentReq);
         return studentResponse;
+    }
+
+    public Student getStudent(Long id) {
+        Optional<Student> studentResponse = studentRepository.findById(id);
+        if(studentResponse.isPresent()) return studentResponse.get();
+        return null;
+    }
+
+    public List<Student> getAllStudent() {
+        List<Student> studentList = studentRepository.findAll();
+        return studentList;
     }
 }
