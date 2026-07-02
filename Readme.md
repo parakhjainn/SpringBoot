@@ -104,9 +104,13 @@
 - Runner Interfaces Demo (ApplicationRunner)
 - Runner Interfaces Demo (CommandLineRunner)
 
-# Lecture 11 SpringBootCRUDDemo
+# Lecture 11- SpringBootCRUDDemo
 
+## Lecture 11
 - exclude datasourceautoconfiguration to print hello world
 - proper folder structure (MVC)
 - @Entity
 - Controller Service Repository
+
+## Lecture 12
+- extends JpaRepository Interface

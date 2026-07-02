@@ -14,14 +14,10 @@ public class StudentService {
     }
 
     public Student createStudent(Student studentReq) {
-        System.out.println("Inside Student Service");
-
         // Business Logic
 
         // store to db
-        Student studentResponse = studentRepository.saveStudent(studentReq);
-
-        System.out.println("Exiting Student Service");
+        Student studentResponse = studentRepository.save(studentReq);
         return studentResponse;
     }
 }
