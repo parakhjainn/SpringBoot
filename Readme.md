@@ -116,3 +116,5 @@
 - extends JpaRepository Interface
 - MySQL Configuration
 - Get Student by Id & Get all Student API
+- Update Student API
+- Delete Student API
