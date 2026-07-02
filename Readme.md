@@ -114,3 +114,5 @@
 
 ## Lecture 12
 - extends JpaRepository Interface
+- MySQL Configuration
+- 
