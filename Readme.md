@@ -101,3 +101,4 @@
 
 - application.properties
 - @ConfigurationProperties
+- Runner Interfaces Demo (ApplicationRunner)
