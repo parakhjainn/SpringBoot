@@ -14,6 +14,7 @@ public class Student {
     private int age;
     private int rollNo;
     private String subject;
+    private boolean deleted;
 
     public Long getId() {
         return id;
@@ -63,6 +64,13 @@ public class Student {
         this.subject = subject;
     }
 
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
+    }
 }
 
 /*

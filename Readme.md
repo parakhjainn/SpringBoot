@@ -107,14 +107,21 @@
 # Lecture 11- SpringBootCRUDDemo
 
 ## Lecture 11
+
 - exclude datasourceautoconfiguration to print hello world
 - proper folder structure (MVC)
 - @Entity
 - Controller Service Repository and createStudent API
 
 ## Lecture 12
+
 - extends JpaRepository Interface
 - MySQL Configuration
 - Get Student by Id & Get all Student API
 - Update Student API
 - Delete Student API
+
+## Lecture 13
+
+- Soft Delete changes in CRUD APIs
+- 
