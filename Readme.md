@@ -125,4 +125,4 @@
 
 - Soft Delete changes in CRUD APIs
 - auto increment id
-- 
+- query param instead of path param
