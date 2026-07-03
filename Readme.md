@@ -104,7 +104,7 @@
 - Runner Interfaces Demo (ApplicationRunner)
 - Runner Interfaces Demo (CommandLineRunner)
 
-# Lecture 11- SpringBootCRUDDemo
+# Lecture 11-13 SpringBootCRUDDemo
 
 ## Lecture 11
 
@@ -126,3 +126,9 @@
 - Soft Delete changes in CRUD APIs
 - auto increment id
 - query param instead of path param
+
+# Lecture 14 ServletCRUDDemo
+
+# Lecture 15 Spring MVC
+
+- 
