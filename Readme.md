@@ -124,4 +124,5 @@
 ## Lecture 13
 
 - Soft Delete changes in CRUD APIs
+- auto increment id
 - 
