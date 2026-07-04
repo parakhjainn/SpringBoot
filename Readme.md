@@ -134,3 +134,5 @@
 ## SpringMVCDemo
 
 - Dependencies added
+- CSR added
+- config added
