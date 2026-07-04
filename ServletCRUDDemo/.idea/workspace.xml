@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6f1b14c-4434-4d08-9620-e5e16e950884" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/in/strikes/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/in/strikes/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/in/strikes/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/in/strikes/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/in/strikes/servlet/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/in/strikes/servlet/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/in/strikes/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/in/strikes/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/in/strikes/package-info.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/in/strikes/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/in/strikes/servlet/HelloServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/in/strikes/servlet/UserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crud-app.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crud-app/WEB-INF/classes/in/strikes/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crud-app/WEB-INF/classes/in/strikes/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crud-app/WEB-INF/classes/in/strikes/package-info.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crud-app/WEB-INF/classes/in/strikes/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crud-app/WEB-INF/classes/in/strikes/servlet/HelloServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crud-app/WEB-INF/classes/in/strikes/servlet/UserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Readme.md" afterDir="false" />
-    </list>
+    <list default="true" id="e6f1b14c-4434-4d08-9620-e5e16e950884" name="Changes" comment="servlet crud demo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,6 +76,19 @@
       <option name="presentableId" value="Default" />
       <updated>1783081836194</updated>
     </task>
+    <task id="LOCAL-00001" summary="servlet crud demo">
+      <option name="closed" value="true" />
+      <created>1783102577091</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783102577091</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="servlet crud demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="servlet crud demo" />
   </component>
 </project>
