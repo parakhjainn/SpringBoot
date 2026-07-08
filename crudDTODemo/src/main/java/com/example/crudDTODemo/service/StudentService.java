@@ -1,9 +1,12 @@
 package com.example.crudDTODemo.service;
 
+import com.example.crudDTODemo.dto.CreateStudentRequestDto;
+import com.example.crudDTODemo.dto.CreateStudentResponseDto;
 import com.example.crudDTODemo.entity.Student;
 import com.example.crudDTODemo.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,13 +19,15 @@ public class StudentService {
         this.studentRepository = studentRepository;
     }
 
-    public Student createStudent(Student studentReq) {
-        // Business Logic
-        studentReq.setDeleted(false); // by default
+    public CreateStudentResponseDto createStudent(CreateStudentRequestDto createStudentRequestDto) {
+        Student student = mapToEntity(createStudentRequestDto);
 
-        // store to db
-        Student studentResponse = studentRepository.save(studentReq);
-        return studentResponse;
+        student.setCreatedAt(LocalDateTime.now());
+        student.setUpdatedAt(LocalDateTime.now());
+
+        Student studentResponse = studentRepository.save(student);
+
+        return mapToDto(studentResponse);
     }
 
     // select * from student where id = 1 & deleted = false;
@@ -86,5 +91,34 @@ public class StudentService {
         studentRepository.save(studentToSave);
 
         return true;
+    }
+
+    private Student mapToEntity(CreateStudentRequestDto createStudentRequestDto) {
+        Student student = new Student();
+
+        student.setAge(createStudentRequestDto.getAge());
+        student.setEmail(createStudentRequestDto.getEmail());
+        student.setName(createStudentRequestDto.getName());
+        student.setSubject(createStudentRequestDto.getSubject());
+        student.setRollNo(createStudentRequestDto.getRollNo());
+        student.setDeleted(false);
+
+        return student;
+    }
+
+    private CreateStudentResponseDto mapToDto(Student student) {
+        CreateStudentResponseDto createStudentResponseDto = new CreateStudentResponseDto();
+
+        createStudentResponseDto.setId(student.getId());
+        createStudentResponseDto.setAge(student.getAge());
+        createStudentResponseDto.setEmail(student.getEmail());
+        createStudentResponseDto.setName(student.getName());
+        createStudentResponseDto.setSubject(student.getSubject());
+        createStudentResponseDto.setRollNo(student.getRollNo());
+        createStudentResponseDto.setMessage("Student saved successfully !");
+        createStudentResponseDto.setCreatedAt(student.getCreatedAt());
+        createStudentResponseDto.setUpdatedAt(student.getUpdatedAt());
+
+        return createStudentResponseDto;
     }
 }

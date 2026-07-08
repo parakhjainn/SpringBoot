@@ -151,3 +151,4 @@
 - problem when using @Entity at all layers
     - client need to send unnecessary fields which they shouldn't
     - client can modify sensitive/internal data
+- solution : DTOs

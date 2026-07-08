@@ -1,25 +1,16 @@
-package com.example.crudDTODemo.entity;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+package com.example.crudDTODemo.dto;
 
 import java.time.LocalDateTime;
 
-@Entity
-public class Student {
+public class CreateStudentResponseDto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
     private String email;
     private int age;
     private int rollNo;
     private String subject;
-    private boolean deleted;
+    private String message;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
@@ -71,12 +62,12 @@ public class Student {
         this.subject = subject;
     }
 
-    public boolean isDeleted() {
-        return deleted;
+    public String getMessage() {
+        return message;
     }
 
-    public void setDeleted(boolean deleted) {
-        this.deleted = deleted;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public LocalDateTime getCreatedAt() {
@@ -95,13 +86,3 @@ public class Student {
         this.updatedAt = updatedAt;
     }
 }
-
-/*
-    {
-        "name": "Parakh",
-        "email" : "Parakh@gmail.com",
-        "rollNo": 18,
-        "age": 26,
-        "subject": "springboot"
-    }
- */
