@@ -35,12 +35,7 @@ public class StudentService {
     // select * from student where id = 1 & deleted = false;
     public CreateStudentResponseDto getStudent(Long id) {
         Optional<Student> studentResponse = studentRepository.findByIdAndDeletedIsFalse(id);
-
-        if(studentResponse.isPresent()) {
-            return mapToCreateDto(studentResponse.get());
-        }
-
-        return null;
+        return mapToCreateDto(studentResponse.get());
     }
 
     // select * from student where deleted = false;
