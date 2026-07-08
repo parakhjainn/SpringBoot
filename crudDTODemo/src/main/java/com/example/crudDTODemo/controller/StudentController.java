@@ -35,20 +35,20 @@ public class StudentController {
 
     // read 1 student
     @GetMapping("/get")
-    public ResponseEntity<Student> getStudent(@RequestParam Long id) {
-        Student studentResponse = studentService.getStudent(id);
+    public ResponseEntity<CreateStudentResponseDto> getStudent(@RequestParam Long id) {
+        CreateStudentResponseDto createStudentResponseDto = studentService.getStudent(id);
 
-        if(studentResponse == null) {
+        if(createStudentResponseDto == null) {
             return ResponseEntity.notFound().build();
         }
 
-        return ResponseEntity.ok(studentResponse);
+        return ResponseEntity.ok(createStudentResponseDto);
     }
 
     // read all student
     @GetMapping("/getAll")
-    public ResponseEntity<List<Student>> getAllStudent() {
-        List<Student> studentList = studentService.getAllStudent();
+    public ResponseEntity<List<CreateStudentResponseDto>> getAllStudent() {
+        List<CreateStudentResponseDto> studentList = studentService.getAllStudent();
 
         if(studentList.isEmpty()) {
             return ResponseEntity

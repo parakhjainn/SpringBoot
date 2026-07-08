@@ -152,3 +152,4 @@
     - client need to send unnecessary fields which they shouldn't
     - client can modify sensitive/internal data
 - solution : DTOs
+- extra DTOs

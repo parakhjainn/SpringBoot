@@ -33,20 +33,23 @@ public class StudentService {
     }
 
     // select * from student where id = 1 & deleted = false;
-    public Student getStudent(Long id) {
+    public CreateStudentResponseDto getStudent(Long id) {
         Optional<Student> studentResponse = studentRepository.findByIdAndDeletedIsFalse(id);
 
         if(studentResponse.isPresent()) {
-            return studentResponse.get();
+            return mapToCreateDto(studentResponse.get());
         }
 
         return null;
     }
 
     // select * from student where deleted = false;
-    public List<Student> getAllStudent() {
+    public List<CreateStudentResponseDto> getAllStudent() {
         List<Student> studentList = studentRepository.findByDeletedIsFalse();
-        return studentList;
+
+        return studentList.stream()
+                .map(this::mapToCreateDto)
+                .toList();
     }
 
     public UpdateStudentResponseDto updateStudent(Long id, UpdateStudentRequestDto updateStudentRequestDto) {
