@@ -142,4 +142,10 @@
 - Dependencies added
 - hello controller added
 - views added 
-- config added 
+- config added
+
+# Lecture 16 crudDTODemo
+
+- basic project with dependencies downloaded from spring initializer
+- layered architecture
+- 
