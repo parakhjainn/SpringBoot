@@ -153,3 +153,4 @@
     - client can modify sensitive/internal data
 - solution : DTOs
 - extra DTOs
+- validations : dependency
