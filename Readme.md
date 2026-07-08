@@ -148,4 +148,6 @@
 
 - basic project with dependencies downloaded from spring initializer
 - layered architecture with all code same as SpringBootCRUDDemo
-- 
+- problem when using @Entity at all layers
+    - client need to send unnecessary fields which they shouldn't
+    - client can modify sensitive/internal data
