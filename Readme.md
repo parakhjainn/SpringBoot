@@ -159,4 +159,4 @@
 # Lecture 17 Exception Handling (continued with crudDTODemo)
 
 - API URLs refactoring
-- Repeated error logic refactoring
+- Repeated error logic refactoring via exception handling

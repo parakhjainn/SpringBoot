@@ -17,4 +17,6 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 
     // findAllAndDeletedIsFalse is not correct format
     // correct format = findBy + fieldName + Condition
+
+    boolean existsByEmail(String emailId);
 }
