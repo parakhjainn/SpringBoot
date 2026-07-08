@@ -154,3 +154,4 @@
 - solution : DTOs
 - extra DTOs
 - validations : dependency
+- validations added at DTOs level and check at controller
