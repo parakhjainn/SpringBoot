@@ -35,8 +35,8 @@ public class StudentController {
     }
 
     // read 1 student
-    @GetMapping("/get")
-    public ResponseEntity<CreateStudentResponseDto> getStudent(@RequestParam Long id) {
+    @GetMapping("/{id}")
+    public ResponseEntity<CreateStudentResponseDto> getStudent(@PathVariable Long id) {
         CreateStudentResponseDto createStudentResponseDto = studentService.getStudent(id);
 
         if(createStudentResponseDto == null) {
@@ -47,7 +47,7 @@ public class StudentController {
     }
 
     // read all student
-    @GetMapping("/getAll")
+    @GetMapping
     public ResponseEntity<List<CreateStudentResponseDto>> getAllStudent() {
         List<CreateStudentResponseDto> studentList = studentService.getAllStudent();
 

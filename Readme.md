@@ -155,3 +155,8 @@
 - extra DTOs
 - validations : dependency
 - validations added at DTOs level and check at controller
+
+# Lecture 17 Exception Handling (continued with crudDTODemo)
+
+- API URLs refactoring
+- 
