@@ -147,5 +147,5 @@
 # Lecture 16 crudDTODemo
 
 - basic project with dependencies downloaded from spring initializer
-- layered architecture
+- layered architecture with all code same as SpringBootCRUDDemo
 - 
