@@ -2,6 +2,8 @@ package com.example.crudDTODemo.controller;
 
 import com.example.crudDTODemo.dto.CreateStudentRequestDto;
 import com.example.crudDTODemo.dto.CreateStudentResponseDto;
+import com.example.crudDTODemo.dto.UpdateStudentRequestDto;
+import com.example.crudDTODemo.dto.UpdateStudentResponseDto;
 import com.example.crudDTODemo.entity.Student;
 import com.example.crudDTODemo.service.StudentService;
 import org.springframework.http.HttpStatus;
@@ -23,12 +25,12 @@ public class StudentController {
     // create student
     @PostMapping  // @PostMapping("/create")
     public ResponseEntity<CreateStudentResponseDto> createStudent(@RequestBody CreateStudentRequestDto createStudentRequestDto) {
-        CreateStudentResponseDto createdStudent = studentService.createStudent(createStudentRequestDto);
+        CreateStudentResponseDto createStudentResponseDto = studentService.createStudent(createStudentRequestDto);
 
         // return ResponseEntity.ok(createdStudent);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(createdStudent);
+                .body(createStudentResponseDto);
     }
 
     // read 1 student
@@ -49,7 +51,9 @@ public class StudentController {
         List<Student> studentList = studentService.getAllStudent();
 
         if(studentList.isEmpty()) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity
+                    .notFound()
+                    .build();
         }
 
         return ResponseEntity.ok(studentList);
@@ -58,14 +62,14 @@ public class StudentController {
 
     // update student
     @PutMapping
-    public ResponseEntity<Student> updateStudent(@RequestParam Long id, @RequestBody Student student) {
-        Student studentResponse = studentService.updateStudent(id, student);
+    public ResponseEntity<UpdateStudentResponseDto> updateStudent(@RequestParam Long id, @RequestBody UpdateStudentRequestDto updateStudentRequestDto) {
+        UpdateStudentResponseDto updateStudentResponseDto = studentService.updateStudent(id, updateStudentRequestDto);
 
-        if(studentResponse == null) {
+        if(updateStudentResponseDto == null) {
             return ResponseEntity.notFound().build();
         }
 
-        return ResponseEntity.ok(studentResponse);
+        return ResponseEntity.ok(updateStudentResponseDto);
     }
 
     // delete student

@@ -2,6 +2,8 @@ package com.example.crudDTODemo.service;
 
 import com.example.crudDTODemo.dto.CreateStudentRequestDto;
 import com.example.crudDTODemo.dto.CreateStudentResponseDto;
+import com.example.crudDTODemo.dto.UpdateStudentRequestDto;
+import com.example.crudDTODemo.dto.UpdateStudentResponseDto;
 import com.example.crudDTODemo.entity.Student;
 import com.example.crudDTODemo.repository.StudentRepository;
 import org.springframework.stereotype.Service;
@@ -27,7 +29,7 @@ public class StudentService {
 
         Student studentResponse = studentRepository.save(student);
 
-        return mapToDto(studentResponse);
+        return mapToCreateDto(studentResponse);
     }
 
     // select * from student where id = 1 & deleted = false;
@@ -47,7 +49,7 @@ public class StudentService {
         return studentList;
     }
 
-    public Student updateStudent(Long id, Student studentReq) {
+    public UpdateStudentResponseDto updateStudent(Long id, UpdateStudentRequestDto updateStudentRequestDto) {
         Optional<Student> existingStudent = studentRepository.findByIdAndDeletedIsFalse(id);
 
         if(existingStudent.isEmpty()) {
@@ -55,14 +57,15 @@ public class StudentService {
         }
 
         Student studentToSave = existingStudent.get();
-        studentToSave.setRollNo(studentReq.getRollNo());
-        studentToSave.setSubject(studentReq.getSubject());
-        studentToSave.setEmail(studentReq.getEmail());
-        studentToSave.setAge(studentReq.getAge());
-        studentToSave.setName(studentReq.getName());
+        studentToSave.setRollNo(updateStudentRequestDto.getRollNo());
+        studentToSave.setSubject(updateStudentRequestDto.getSubject());
+        studentToSave.setAge(updateStudentRequestDto.getAge());
+        studentToSave.setName(updateStudentRequestDto.getName());
         studentToSave.setDeleted(false); // by default
+        studentToSave.setUpdatedAt(LocalDateTime.now());
 
-        return studentRepository.save(studentToSave);
+        Student savedStudent = studentRepository.save(studentToSave);
+        return mapToUpdateDto(savedStudent);
     }
 
     // delete whether deleted = false or not
@@ -106,7 +109,7 @@ public class StudentService {
         return student;
     }
 
-    private CreateStudentResponseDto mapToDto(Student student) {
+    private CreateStudentResponseDto mapToCreateDto(Student student) {
         CreateStudentResponseDto createStudentResponseDto = new CreateStudentResponseDto();
 
         createStudentResponseDto.setId(student.getId());
@@ -120,5 +123,20 @@ public class StudentService {
         createStudentResponseDto.setUpdatedAt(student.getUpdatedAt());
 
         return createStudentResponseDto;
+    }
+
+    private UpdateStudentResponseDto mapToUpdateDto(Student student) {
+        UpdateStudentResponseDto updateStudentResponseDto = new UpdateStudentResponseDto();
+
+        updateStudentResponseDto.setId(student.getId());
+        updateStudentResponseDto.setAge(student.getAge());
+        updateStudentResponseDto.setEmail(student.getEmail());
+        updateStudentResponseDto.setName(student.getName());
+        updateStudentResponseDto.setSubject(student.getSubject());
+        updateStudentResponseDto.setRollNo(student.getRollNo());
+        updateStudentResponseDto.setMessage("Student updated  successfully !");
+        updateStudentResponseDto.setUpdatedAt(student.getUpdatedAt());
+
+        return updateStudentResponseDto;
     }
 }
