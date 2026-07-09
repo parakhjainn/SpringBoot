@@ -160,3 +160,4 @@
 
 - API URLs refactoring
 - Repeated error logic refactoring via exception handling
+- Error Response DTO
