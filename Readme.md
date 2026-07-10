@@ -162,7 +162,7 @@
 - Repeated error logic refactoring via exception handling
 - Error Response DTO
 
-# Lecture 18
+# Lecture 18 profileDemo
 
 - basic project downloaded from spring initializer
 - single value read from application.properties for all environments
