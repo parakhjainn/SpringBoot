@@ -165,3 +165,4 @@
 # Lecture 18
 
 - basic project downloaded from spring initializer
+- value read from application.properties
