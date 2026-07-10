@@ -165,5 +165,6 @@
 # Lecture 18
 
 - basic project downloaded from spring initializer
-- value read from application.properties
+- single value read from application.properties for all environments
 - application.yml 
+- show different messages for different environments. How? Profiling 

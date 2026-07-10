@@ -5,15 +5,15 @@
 #app.welcome.message = Hello, Welcome to my Application !
 #app.welcome.code = 200
 
-spring:
-  application:
-    name: profileDemo
-
-server:
-  port: 9090
-
-app:
-  welcome:
-    message: "Hello, Welcome to my Application !"
-    code: 200
-    users: Rohit, Aditya, Mohan, Sohan
+#spring:
+#  application:
+#    name: profileDemo
+#
+#server:
+#  port: 9090
+#
+#app:
+#  welcome:
+#    message: "Hello, Welcome to my Application !"
+#    code: 200
+#    users: Rohit, Aditya, Mohan, Sohan
