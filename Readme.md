@@ -161,3 +161,7 @@
 - API URLs refactoring
 - Repeated error logic refactoring via exception handling
 - Error Response DTO
+
+# Lecture 18
+
+- basic project downloaded from spring initializer
