@@ -166,3 +166,4 @@
 
 - basic project downloaded from spring initializer
 - value read from application.properties
+- application.yml 
