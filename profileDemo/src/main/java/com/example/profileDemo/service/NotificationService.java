@@ -1,13 +1,6 @@
 package com.example.profileDemo.service;
 
-import org.springframework.stereotype.Service;
+public interface NotificationService {
 
-@Service
-public class NotificationService {
-
-    public String send() {
-        // email // sms
-
-        return "Notification !";
-    }
+    String send();
 }
