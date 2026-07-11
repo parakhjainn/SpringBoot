@@ -24,11 +24,13 @@ public class LoggingFilter implements Filter {
 //
 //        System.out.println("Request exiting from logging filter !");
 
+        Long startTime = System.currentTimeMillis();
+
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
         HttpServletResponse httpServletResponse = (HttpServletResponse) servletResponse;
 
+        // Request Logging
         String requestId = UUID.randomUUID().toString();
-
         httpServletResponse.setHeader("X-Request-ID", requestId);
 
         // Request Log
@@ -36,12 +38,21 @@ public class LoggingFilter implements Filter {
                 + httpServletRequest.getMethod() + " "
                 + httpServletRequest.getRequestURI());
 
-        filterChain.doFilter(servletRequest, servletResponse);
+        try {
+            filterChain.doFilter(servletRequest, servletResponse);
+        } catch (Exception ex) {
 
-        // Response status log
-        System.out.println("Response status : "
-                + httpServletResponse.getStatus());
+        } finally {
+            Long endTime = System.currentTimeMillis();
 
+            long duration = endTime - startTime;
+
+            // Response status log
+            System.out.println("Response status : "
+                    + httpServletResponse.getStatus());
+
+            System.out.println("API Response time : " + duration + "ms");
+        }
 
     }
 }
