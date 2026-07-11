@@ -174,4 +174,5 @@
 # Lecture 19 filterDemo
 
 - basic project downloaded from spring initializer
+- logging filter added
 - 
