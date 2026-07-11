@@ -176,4 +176,4 @@
 - basic project downloaded from spring initializer
 - logging filter added
 - authentification filter added 
-- 
+- request logging in logging filter
