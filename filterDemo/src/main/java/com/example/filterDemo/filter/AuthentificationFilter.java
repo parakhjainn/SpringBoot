@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-//@Component
-public class LoggingFilter implements Filter {
+@Component
+public class AuthentificationFilter implements Filter {
 
 
     @Override
@@ -17,26 +17,23 @@ public class LoggingFilter implements Filter {
                          FilterChain filterChain)
             throws IOException, ServletException {
 
-//        System.out.println("Request entered in logging filter !");
+//        System.out.println("Request entered in authentification filter !");
 //
 //        filterChain.doFilter(servletRequest, servletResponse);
 //
-//        System.out.println("Request exiting from logging filter !");
+//        System.out.println("Request exiting from authentification filter !");
 
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
         HttpServletResponse httpServletResponse = (HttpServletResponse) servletResponse;
 
-        // Request Log
-        System.out.println("Incoming Request : "
-                + httpServletRequest.getMethod() + " "
-                + httpServletRequest.getRequestURI());
+         String token = httpServletRequest.getHeader("token");
 
-        filterChain.doFilter(servletRequest, servletResponse);
+         if(token == null || !token.equalsIgnoreCase("123456")) {
+             httpServletResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+             return;
+         }
 
-        // Response status log
-        System.out.println("Response status : "
-                + httpServletResponse.getStatus());
-
+         filterChain.doFilter(servletRequest, servletResponse);
 
     }
 }
