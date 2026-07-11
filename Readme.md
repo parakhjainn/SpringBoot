@@ -170,3 +170,8 @@
 - show different messages for different environments. How? Profiling 
 - Notification Service without profile (notification sent even in dev/staging env)
 - Notification Service using @Profile
+
+# Lecture 19 filterDemo
+
+- basic project downloaded from spring initializer
+- 
