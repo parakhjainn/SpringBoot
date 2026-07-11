@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.util.UUID;
 
-@Component
+//@Component
 public class LoggingFilter implements Filter {
 
 

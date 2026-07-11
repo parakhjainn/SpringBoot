@@ -11,10 +11,10 @@ public class StudentService {
         System.out.println(studentDTO.getName());
         System.out.println(studentDTO.getEmail());
 
-        try {
-            Thread.sleep(2000);
-        } catch (Exception ex) {
-
-        }
+//        try {
+//            Thread.sleep(2000);
+//        } catch (Exception ex) {
+//
+//        }
     }
 }

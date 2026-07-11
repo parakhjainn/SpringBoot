@@ -178,3 +178,4 @@
 - authentification filter added 
 - request logging in logging filter
 - find request TAT time & use try-catch-finally
+- error response to client

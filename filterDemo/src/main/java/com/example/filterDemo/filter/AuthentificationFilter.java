@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-//@Component
+@Component
 public class AuthentificationFilter implements Filter {
 
 
@@ -27,9 +27,19 @@ public class AuthentificationFilter implements Filter {
         HttpServletResponse httpServletResponse = (HttpServletResponse) servletResponse;
 
          String token = httpServletRequest.getHeader("token");
+         String apiKey = httpServletRequest.getHeader("x-api-key");
 
          if(token == null || !token.equalsIgnoreCase("123456")) {
              httpServletResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+             return;
+         }
+
+         if(apiKey == null || !apiKey.equalsIgnoreCase("secret123")) {
+             httpServletResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+             httpServletResponse.setContentType("application/json");
+             httpServletResponse.getWriter().write("{\n" +
+                     "    \"message\" : \"Invalid or Missing API key !\"\n" +
+                     "}");
              return;
          }
 
