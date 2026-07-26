@@ -190,3 +190,10 @@
 - RequestFilter added
 - DummyFilter added using @Bean and FilterConfig added
 - SpringDemoFilter added
+
+# Lecture 21 InterceptorDemo 
+
+- LoggingInterceptor added and WebConfig added
+- AuthenticationInterceptor added
+- AuthorizationInterceptor added  
+- updated WebConfig for all 3 interceptors
