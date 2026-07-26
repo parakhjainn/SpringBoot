@@ -180,3 +180,13 @@
 - find request TAT time & use try-catch-finally
 - error response to client
 - filterChain / multiple filters 
+
+# Lecture 20 filterDemo2
+
+- ResponseHeaderFilter added and do the changes in response before forwarding request to controller
+- AuthenticationFilter added 
+- ResponseBodyFilter added and use ContentCachingResponseWrapper to wrap Response (Not a good practice)
+- studentDTO and studentResponseDTO added
+- RequestFilter added
+- DummyFilter added using @Bean and FilterConfig added
+- SpringDemoFilter added
