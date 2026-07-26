@@ -197,3 +197,11 @@
 - AuthenticationInterceptor added
 - AuthorizationInterceptor added  
 - updated WebConfig for all 3 interceptors
+
+# Lecture 21 aopIntroductionDemo
+
+- business logic + infra logic : seperation of concerns 
+- Way 1 : Util class : LoggingServiceUtil added but issue still persists
+- Way 2 : Inheritance but issue still persists
+- Way 3 : Wrappers -> Decorator Design Pattern but complex
+- Way 4 : AOP is the solution 
