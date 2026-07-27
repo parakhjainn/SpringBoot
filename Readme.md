@@ -205,3 +205,8 @@
 - Way 2 : Inheritance but issue still persists
 - Way 3 : Wrappers -> Decorator Design Pattern but complex
 - Way 4 : AOP is the solution 
+
+# Lecture 22 AOPDemo
+
+- LoggingAspect added with @Before
+- logBeforeMethod, logAfterReturningMethod, logAfterThrowingMethod, logAfterMethod, logAroundMethod 
