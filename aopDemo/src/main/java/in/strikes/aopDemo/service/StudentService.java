@@ -4,16 +4,21 @@ import in.strikes.aopDemo.dto.Student;
 import org.springframework.stereotype.Service;
 
 @Service
-public class StudentService {
+public class StudentService implements StudentServiceInterface {
 
+    @Override
     public Student createStudent(Student student) {
         System.out.println("Student saved");
-        //throw new RuntimeException("Some error happened");
         return student;
     }
 
-    public String dummyMethod(String s) {
-        System.out.println("dummyMethod called");
+    @Override
+    public String getStudent(String s) {
+        System.out.println(s);
         return s;
+    }
+
+    public int dummyMethod() {
+        return 0;
     }
 }

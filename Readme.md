@@ -198,7 +198,7 @@
 - AuthorizationInterceptor added  
 - updated WebConfig for all 3 interceptors
 
-# Lecture 21 aopIntroductionDemo
+# Lecture 22 aopIntroductionDemo
 
 - business logic + infra logic : seperation of concerns 
 - Way 1 : Util class : LoggingServiceUtil added but issue still persists
@@ -206,7 +206,14 @@
 - Way 3 : Wrappers -> Decorator Design Pattern but complex
 - Way 4 : AOP is the solution 
 
-# Lecture 22 AOPDemo
+# Lecture 23-24 AOPDemo
 
 - LoggingAspect added with @Before
 - logBeforeMethod, logAfterReturningMethod, logAfterThrowingMethod, logAfterMethod, logAroundMethod 
+- Pointcuts expression : execution(), within(), annotation(), Bean() Designator
+- can combine 2 pointcuts expression
+- named pointcuts using @Pointcut
+- centralizing application pointcuts 
+- advanced pointcut designators : @within(), @target(), args, @args(), target, this
+- @withing() vs @target() : same but @target() also works in case of inheritance
+- args() vs @args() : arguments 

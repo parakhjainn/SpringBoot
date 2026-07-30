@@ -1,5 +1,9 @@
 package in.strikes.aopDemo.dto;
 
+import jdk.jfr.Timestamp;
+import org.springframework.stereotype.Component;
+
+@Timestamp
 public class Student {
     private String name;
     private Integer age;
