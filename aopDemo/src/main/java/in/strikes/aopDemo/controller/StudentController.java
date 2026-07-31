@@ -2,7 +2,6 @@ package in.strikes.aopDemo.controller;
 
 import in.strikes.aopDemo.dto.Student;
 import in.strikes.aopDemo.service.StudentService;
-import in.strikes.aopDemo.service.StudentServiceInterface;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,9 +9,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/students")
 public class StudentController {
 
-    private StudentServiceInterface studentService;
+    private StudentService studentService;
 
-    public StudentController(StudentServiceInterface studentService) {
+    public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
 

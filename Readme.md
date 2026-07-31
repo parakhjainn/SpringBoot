@@ -206,7 +206,7 @@
 - Way 3 : Wrappers -> Decorator Design Pattern but complex
 - Way 4 : AOP is the solution 
 
-# Lecture 23-24 AOPDemo
+# Lecture 23-25 AOPDemo
 
 - LoggingAspect added with @Before
 - logBeforeMethod, logAfterReturningMethod, logAfterThrowingMethod, logAfterMethod, logAroundMethod 
@@ -217,3 +217,7 @@
 - advanced pointcut designators : @within(), @target(), args, @args(), target, this
 - @withing() vs @target() : same but @target() also works in case of inheritance
 - args() vs @args() : arguments 
+- Custom annotations 
+- Marker vs Configured annotations
+- Spring AOP in Bean Lifecycle 
+- 
