@@ -220,4 +220,9 @@
 - Custom annotations 
 - Marker vs Configured annotations
 - Spring AOP in Bean Lifecycle 
-- 
+
+# Lecture 26 JBDCDemo
+
+- Java Application with basic CRUD
+- PreparedStatement and try with resources
+
