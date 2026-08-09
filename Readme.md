@@ -226,3 +226,10 @@
 - Java Application with basic CRUD
 - PreparedStatement and try with resources
 
+# Lecture 27 SpringJDBCDemo
+
+- JDBC -> SpringJDBC : Remove boiler plate code using Template Design Pattern
+- HikariCP : connection pool use by springjdbc internally 
+- spring-boot-starter-jdbc added as dependency in pom.xml
+
+
