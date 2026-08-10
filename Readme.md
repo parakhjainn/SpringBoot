@@ -232,4 +232,8 @@
 - HikariCP : connection pool use by springjdbc internally 
 - spring-boot-starter-jdbc added as dependency in pom.xml
 
+# Lecture 28 HibernateDemo
+
+# Lecture 29 HibernateInternalsDemo
+
 
