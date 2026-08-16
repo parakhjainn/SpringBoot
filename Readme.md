@@ -252,3 +252,22 @@
 - First-level cache and identity mapping
 - persist(), merge(), remove(), detach(), clear() and refresh()
 - Using flush() and clear() during batch processing
+
+# Lecture 30 JPARelationshipDemo
+
+- Why relationship mapping is required
+- Java object references versus database foreign keys
+- One-to-One, One-to-Many, Many-to-One and Many-to-Many relationships
+- Unidirectional versus bidirectional relationships
+- Owning side versus inverse side
+- How @JoinColumn works
+- What mappedBy actually means
+- How to maintain both sides of a bidirectional relationship
+- Relationship helper methods
+- Insert and update behaviour
+- Relationship dirty checking
+- Nullable and mandatory associations
+- One-to-One mapping with unique foreign keys
+- Shared primary-key mapping using @MapsId
+- Many-to-Many mapping using @JoinTable
+- Why Lombok @Data can be dangerous for JPA entities
