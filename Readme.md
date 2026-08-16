@@ -253,7 +253,7 @@
 - persist(), merge(), remove(), detach(), clear() and refresh()
 - Using flush() and clear() during batch processing
 
-# Lecture 30-31 JPARelationshipDemo
+# Lecture 30 JPA Relationship Demo
 
 - Why relationship mapping is required
 - Java object references versus database foreign keys
@@ -272,6 +272,7 @@
 - Many-to-Many mapping using @JoinTable
 - Why Lombok @Data can be dangerous for JPA entities
 
+# Lecture 31 JPA Relationship Demo
 - JPA Cascading
 - Lazy Loading
 - N+1 Problem

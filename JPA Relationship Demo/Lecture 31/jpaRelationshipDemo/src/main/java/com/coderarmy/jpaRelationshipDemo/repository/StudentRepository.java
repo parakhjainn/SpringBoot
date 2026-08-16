@@ -21,14 +21,14 @@ public class StudentRepository {
         entityManager.persist(student);
     }
 
-
+    @EntityGraph(attributePaths = {"department"})
     public Student findById(Long id) {
         return entityManager.find(Student.class, id);
     }
 
-//    @EntityGraph(attributePaths = {"department", "profile"})
-//    public List<Student> findAll() {
-//
-//    }
+    @EntityGraph(attributePaths = {"department", "profile"})
+    public List<Student> findAll() {
+        return null;
+    }
 
 }
