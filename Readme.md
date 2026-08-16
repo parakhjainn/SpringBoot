@@ -236,4 +236,19 @@
 
 # Lecture 29 HibernateInternalsDemo
 
-
+- JPA specification vs Hibernate provider
+- EntityManagerFactory and EntityManager
+- Hibernate SessionFactory and Session
+- Persistence Context explained from first principles
+- How @PersistenceContext works internally
+- Shared EntityManager proxy in Spring
+- How @Transactional works using Spring AOP
+- Transaction boundaries and Unit of Work
+- Complete Hibernate transaction flow
+- Transient, Managed, Detached and Removed entity states
+- Dirty checking and automatic update queries
+- Difference between flush() and commit()
+- Hibernate’s transactional write-behind mechanism
+- First-level cache and identity mapping
+- persist(), merge(), remove(), detach(), clear() and refresh()
+- Using flush() and clear() during batch processing
